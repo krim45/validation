@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer type="module" src="/js/script.js"></script>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <fieldset>
+      <label for="username">아이디</label>
+      <input id="username" type="text" name="username" />
+      <div class="failure-message hide red">아이디는 네 글자 이상, 알파벳과 숫자만 사용할 수 있습니다.</div>
+      <div class="success-message hide green">사용할 수 있는 아이디입니다</div>
+    </fieldset>
+
+    <fieldset>
+      <label for="password">비밀번호</label>
+      <input id="password" type="password" name="password" />
+      <div class="strong-password hide red">비밀번호는 최소 8자 이상, 알파벳과 숫자 및 특수문자(@$!%*#?&)는 하나 이상 포함해야 합니다.</div>
+      <div class="passed-password hide green">사용할 수 있는 비밀번호입니다.</div>
+    </fieldset>
+
+    <fieldset>
+      <label for="password-retype">비밀번호 확인</label>
+      <input id="password-retype" type="password" name="password-retype" />
+      <div class="match-message hide green">비밀번호가 일치합니다.</div>
+      <div class="mismatch-message hide red">비밀번호가 일치하지 않습니다.</div>
+    </fieldset>
+
+    <fieldset>
+      <button id="sign-up">회원가입</button>
+    </fieldset>
+  </body>
+</html>
